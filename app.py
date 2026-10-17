@@ -36,6 +36,25 @@ if "user" not in st.session_state:
 
 st.markdown("""
 <style>
+.stTextInput input,
+.stTextArea textarea {
+    color: #ffffff !important;
+    background-color: #17243b !important;
+    border: 1px solid #6484b8 !important;
+    caret-color: #ffffff !important;
+}
+
+.stTextInput input::placeholder,
+.stTextArea textarea::placeholder {
+    color: #cbd5e1 !important;
+    opacity: 1 !important;
+}
+
+.stTextInput label,
+.stTextArea label {
+    color: #f1f5f9 !important;
+    font-weight: 600 !important;
+}
 .stApp {
     background: linear-gradient(135deg, #07111f, #101d38);
     color: #f8fafc;
